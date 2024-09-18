@@ -1,4 +1,6 @@
 galaxy_info:
+  role_name: clickhouse
+  namespace: my_galaxy_namespace
   author: SMMikh
   description: This is the ansible role for Clickhouse installation
   company: Netology classes
