@@ -4,19 +4,14 @@ pipeline {
     }
 
     stages {
-        stage('refresh role') {
+        stage('get information') {
             steps {
                 sh 'pwd'
-                dir('role-clickhouse') {
-                    sh 'pwd'
-                    sh 'git fetch'
-                }
+                sh 'ls'
             }
         }
         stage('molecula test') {
             steps {
-                sh 'pwd'
-                sh 'ls'
                 sh 'molecule test'
             }
         }
