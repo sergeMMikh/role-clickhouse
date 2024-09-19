@@ -17,10 +17,7 @@ pipeline {
             steps {
                 sh 'pwd'
                 sh 'ls'
-                dir('role-clickhouse') {
-                    sh 'pwd'
-                    sh 'molecule test'
-                }
+                sh 'molecule test'
             }
         }
     }
