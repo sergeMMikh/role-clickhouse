@@ -16,6 +16,7 @@ pipeline {
         stage('molecula test') {
             steps {
                 sh 'pwd'
+                sh 'ls'
                 dir('role-clickhouse') {
                     sh 'pwd'
                     sh 'molecule test'
